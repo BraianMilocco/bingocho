@@ -13,27 +13,30 @@ class BingoGenerator():
         self.column_9 = [ n for n in range(80,91)]
 
     def get_random(self, list_):
-        position = random.randint(0, len(list_))
+        position = random.randint(0, (len(list_)-1))
 
         number = list_[position]
         list_.remove(number)
 
         return number
 
-    def get_number(self,pos):
-        list_ = self.get_list()[str(pos)]
-        return self.get_random(list_)
+    def get_number(self,column_position):
+        if column_position == 0:
+            return 0 
+        list_ = self.get_list()
+        
+        return self.get_random(list_[str(column_position)])
 
-    @staticmethod
+
     def get_list(self):
         return {
-        "1": self.column_1
-        "2": self.column_2 
-        "3": self.column_3 
-        "4": self.column_4 
-        "5": self.column_5 
-        "6": self.column_6 
-        "7": self.column_7 
-        "8": self.column_8 
+        "1": self.column_1,
+        "2": self.column_2, 
+        "3": self.column_3, 
+        "4": self.column_4, 
+        "5": self.column_5, 
+        "6": self.column_6, 
+        "7": self.column_7, 
+        "8": self.column_8, 
         "9": self.column_9 
         }        
