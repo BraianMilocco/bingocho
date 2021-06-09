@@ -1,0 +1,6 @@
+Carpeta donde se va a almacenar todo el front del proyecto 
+
+Tecnologias:
+
+- React
+- Redux

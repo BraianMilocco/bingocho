@@ -1,0 +1,8 @@
+Carpeta donde se va a trabajar el Backend
+
+Tecnlogias:
+
+- Django
+- "REST FRAMEWORK" (?
+- celery
+- memcache
